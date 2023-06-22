@@ -56,7 +56,8 @@ section{
 }
 
 .link {
-    text-decoration: none
+    text-decoration: none;
+    padding: 24px 0;
 }
 
 .list {
@@ -156,7 +157,7 @@ section{
     text-decoration: none;
     color: var(--slate);
     padding-top: 24px;
-    padding-bottom: 24px;
+
 }
 
 .address-link:hover{
