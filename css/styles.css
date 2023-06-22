@@ -65,7 +65,7 @@ section{
 
 /* HEADER */
 
-header {
+.headport {
     border-bottom: 1px solid var(--cornflower);
 }
 
@@ -155,7 +155,8 @@ header {
 .address-link {
     text-decoration: none;
     color: var(--slate);
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .address-link:hover{
@@ -475,6 +476,7 @@ header {
     align-items: flex-start;
     gap: 24px;
     align-content: center;
+    margin-bottom: 72px;
     
 }
 
@@ -516,6 +518,7 @@ header {
     row-gap: 48px;
     column-gap: 24px;
     margin-bottom: 72px;
+    
 }
 
 .list-projects {
@@ -527,6 +530,7 @@ header {
     gap: 32px;
     flex-shrink: 0;
     border: 1px solid var(--cornflower);
+    
 }
 
 .project-about {
