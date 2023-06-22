@@ -41,8 +41,13 @@ body{
 }
 
 .conteiner {
-    padding: 0 156px;
+    margin: 0 auto;
+    padding: 0 15px;
 
+}
+
+img{
+    display: block;
 }
 
 section{
@@ -61,10 +66,9 @@ section{
 .header {
     background-color: var(--white);
     color: var(--navy-blue);
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 332px;
+    justify-content: space-between;
     width: 1440px;
     height: 72px;
     border-bottom: 1px solid var(--cornflower);
@@ -73,7 +77,8 @@ section{
 
 .header-nav {
     font-weight: 500;
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     gap: 76px;
 
 
@@ -89,6 +94,7 @@ section{
     letter-spacing: 0.03em;
     color: var(--iris);
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logo-navy{
@@ -98,7 +104,7 @@ section{
 /*HEADER LIST WITH LINK*/
 
 .header-list {
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
     gap: 40px;
     flex-grow: 1;
@@ -120,7 +126,7 @@ section{
     color: var(--ocean);
 }
 
-/*HEADER ADDRESS start*/
+/*HEADER ADDRESS*/
 
 .address {
     display: inline-flex;
@@ -133,7 +139,7 @@ section{
 }
 
 .address-list {
-    display: inline-flex;
+    display: flex;
     gap: 40px;
     list-style-type: none;
     color: var(--slate);
@@ -180,7 +186,7 @@ section{
     letter-spacing: 0.02em;
 
     display: flex;
-    width: 496px;
+    max-width: 496px;
     flex-direction: column;
 }
 
@@ -194,7 +200,10 @@ section{
     cursor: pointer;
     background-color: var(--iris);
 
-    display: inline-flex;
+    display: block;
+    min-width: 169;
+    height: 56px;
+    border: none;
     padding: 16px 32px;
     gap: 10px;
     border-radius: 4px;
@@ -211,13 +220,33 @@ section{
 /*SECTION BENEFITS*/
 
 .section-benefits{
-    margin: 120px auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 156px;
+    padding-right: 156px;
 
 }
 
+
+/*
 .benefits-title {
     letter-spacing: 0.02em;
     display: none;
+}
+*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .benefits-list {
@@ -227,10 +256,14 @@ section{
     font-size: 16px;
     line-height: 1.5;
 
-    display: inline-flex;
+    display: flex;
     gap: 24px;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.benefit {
+    width: calc((100% - 72px) / 4);
 }
 
 .benefits-title-list {
@@ -239,6 +272,7 @@ section{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .text-benefits{
@@ -248,7 +282,9 @@ section{
 /*SECTION WHAT WE ARE DOING*/
 
 .section-doing{
-    margin: 120px auto;
+   padding-bottom: 120px;
+   padding-left: 156px;
+   padding-right: 156px;
 }
 
 .doing-title {
@@ -266,12 +302,20 @@ section{
 .doing-list {
     list-style-type: none;
 
-    display: inline-flex;
+    display: flex;
     gap: 24px;
 
 }
 
+.do-photo{
+    width: calc((100% - 48px) / 3);
+}
+
 /*OUR TEAM*/
+
+.our-team{
+    padding: 0;
+}
 
 .section-team{
     background-color: var(--cloud);
@@ -299,7 +343,7 @@ section{
 .team-list{
     list-style-type: none;
 
-    display: inline-flex;
+    display: flex;
     gap: 24px;
 }
 
@@ -307,13 +351,22 @@ section{
     background-color: var(--white);
     text-transform: capitalize;
     border-radius: 0px 0px 4px 4px;
+
+    width: calc((100% - 72px) / 4);
     
+    /*
     display: inline-flex;
     padding: 0px 0px 32px 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
+    */
+}
+
+.name-team{
+    padding: 32px 16px;
+
 }
 
 .team-list-title {
@@ -322,6 +375,8 @@ section{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .text-team{
@@ -329,6 +384,7 @@ section{
     letter-spacing: 0.02em;
     line-height: 1.5;
     color: var(--slate);
+    text-align: center;
 }
 
 /*FOOTER*/
@@ -339,15 +395,28 @@ section{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    width: 1440px;
     height: 312px;
     flex-shrink: 0;
+}
+
+.footer-block{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 156px;
+        padding-right: 156px;
     
+    
+    /*
     display: flex;
     flex-direction: column;
-    gap: 17.5px;
     justify-content: center;
     align-items: flex-start;
+    */
+}
+
+.logo-link{
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-white{
@@ -357,14 +426,22 @@ section{
 .text-footer{
     letter-spacing: 0.02em;
     display: flex;
-    width: 264px;
+    max-width: 264px;
     flex-direction: column;
     flex-shrink: 0;
 }
 
 /*PORTFOLIO*/
 
-.main-portfolio{
+.main-page {
+        
+}
+
+.main-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+    padding-left: 156px;
+    padding-right: 156px;
     color: var(--slate);
     display: flex;
     flex-direction: column;
@@ -372,19 +449,17 @@ section{
     justify-content: center;
     gap: 72px;
 
-    margin-top: 96px;
-    margin-bottom: 120px;
+    
 }
 
-.portfolio-title {
-    display: none;
-}
+/*BUTTON LIST*/
 
 .button-list{
     list-style-type: none;
-    margin-bottom: 72px;
     
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    
     align-items: flex-start;
     gap: 24px;
     align-content: center;
@@ -401,7 +476,7 @@ section{
     background-color: var(--cloud);
     cursor: pointer;
 
-    display: flex;
+    
     padding: 12px 24px;
     justify-content: center;
     align-items: center;
@@ -412,16 +487,18 @@ section{
 .button:hover {
     background-color: var(--ocean);
     color: var(--white);
+    border: 1px solid transparent;
 }
 
 .button:focus {
     background-color: var(--ocean);
     color: var(--white);
+    border: 1px solid transparent;
 }
 
-.list-all{
-    list-style-type: none;
+/*List of links with img*/
 
+.list-all {
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
@@ -429,28 +506,26 @@ section{
 }
 
 .list-projects {
-
+    width: calc((100% - 48px) / 3);
     display: flex;
-    width: 360px;
-    height: 420px;
-    padding: 0px 0px 32px 0px;
+    padding: 0px 0px 0px 0px;
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
     flex-shrink: 0;
-    border: 1px solid;
+    border: 1px solid var(--cornflower);
 }
 
 .project-about {
     display: flex;
-    padding: 0px 16px;
+    padding: 32px 16px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
 }
 
 .list-all-title {
@@ -459,6 +534,7 @@ section{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    margin-bottom: 8px;
 }
 
 .text-portfolio{

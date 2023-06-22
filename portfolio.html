@@ -7,7 +7,7 @@
     <meta name="webstudio" content="Effective Solutions
 for Your Business" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/modern-normalize" />
+    <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize" />
     <!--Font Raleway-->
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,8 @@ for Your Business" />
 <body>
 
     <!--Header-->
-    <header class="header conteiner">
+    <header>
+        <div class="header conteiner">
         <!--Nav-->
         <nav class="header-nav">
             <a class="logo-link link" href="./index.html">Web<span
@@ -50,14 +51,16 @@ for Your Business" />
                 <li>
                     <a class="address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                 </li>
-            </ul>>
+            </ul>
         </address>
+        </div>
     </header>
 
     <!--Main part-->
-    <main class="main-portfolio conteiner">
-        <section>
-            <h1 class="portfolio-title">Portfolio</h1>
+    <main>
+        <section class="main-page">
+        <div class="main-portfolio conteiner">
+            <h1 class="visually-hidden">Portfolio</h1>
         <!--Buttons-->
         <ul class="button-list list">
             <li>
@@ -161,15 +164,18 @@ for Your Business" />
                         </a>
                     </li>
        </ul>
+      </div>
     </section>
-
+    
     </main>
 
     <!--Footer-->
-    <footer class="footer conteiner">
+    <footer class="footer">
+        <div class="footer-block conteiner">
         <a class="logo-link link" href="./index.html">Web<span
                 class="logo-white">Studio</span></a>
         <p class="text-footer">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+    </div>
     </footer>
 
 
