@@ -78,10 +78,10 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1440px;
     height: 72px;
-    
+    /*
     padding: 0 156px;
+    */
 }
 
 .header-nav {
